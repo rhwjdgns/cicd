@@ -10,7 +10,7 @@ export class AppController {
     const { message, data } = this.appService.getHello();
 
     return {
-      message,
+      message: 'Hello',
       data: {
         serverPort: data.serverPort,
         jwtSecret: data.jwtSecret,
